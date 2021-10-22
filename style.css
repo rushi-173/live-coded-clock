@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5edfe;
+  height: 100vh;
+}
+
+.clock-back {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background-color: #222222;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clock {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+.globe-container {
+  background-color: #222222;
+  position: absolute;
+  z-index: 20;
+  top: 350px;
+  height: 500px;
+  width: 500px;
+  border-radius: 500px;
+  padding: 1rem;
+}
+.globe {
+  background-color: #1b87f2;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.globe img {
+  height: 100%;
+  width: 100%;
+}
+.inner-clock-circle {
+  background-color: #f2f0f1;
+  border: 0.5rem solid #dad7d8;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.clock-core-container {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #3a393c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock-core {
+  height: 20px;
+  width: 20px;
+  background-color: #e9e8eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num {
+  height: 240px;
+  width: 5px;
+  position: absolute;
+  z-index: 10;
+  transform-origin: bottom center;
+  border-top: 10px solid #dad7d8;
+  border-radius: 5px;
+}
+
+.needle-min {
+  height: 240px;
+  width: 50px;
+  position: absolute;
+  z-index: 10;
+  transform-origin: bottom center;
+  background-color: #eb3b4f;
+  opacity: 60%;
+
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  transform: translate(0px, -120px) rotate(306deg);
+}
+.needle-hour {
+  height: 140px;
+  width: 50px;
+  position: absolute;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  z-index: 10;
+  transform-origin: bottom center;
+  background-color: #eb3b4f;
+  opacity: 60%;
+  transform: translate(0px, -70px) rotate(30deg);
+}
+.needle-sec {
+  height: 220px;
+  width: 5px;
+  position: absolute;
+  z-index: 10;
+  transform-origin: bottom center;
+  background-color: #eb3b4f;
+  opacity: 60%;
+
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  transform: translate(0px, -110px);
+}
